@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale">        
+        <link rel="stylesheet" href="./css/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <title>ZOMBIEFLIX</title>        
+    </head>
+    <body onload="mainMovie(actualMovieId), generateMinis()">
+        <header>
+            <div class="container">
+                <div class="links">
+                    <h2 class="logo">z<i class="fas fa-biohazard"></i>mbieflix</h2>
+                    <nav>
+                        <a href="#" class="active">Contágio Inicial</a>
+                        <a href="./series.html">Série de Ocorrências</a>
+                        <a href="./survivors.html">Histórias de Sobreviventes</a>
+                        <a href="./brains.html">Miolos</a>
+                    </nav>
+                </div>
+                
+                <nav class="icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-movie" id="main">
+                <div class="container">
+                    <h3 class="title" id="main-title"></h3>
+                    <p class="description" id="main-desc"></p>
+                    <div class="buttons">
+                        <button class="btn-watch" role="button" onclick="assistir()"><i class="fas fa-play"></i> Assistir</button>
+                        <button class="btn-info" role="button" onclick="info()"><i class="fas fa-info-circle"></i> Mais informações</button>
+                    </div>  
+                </div>                              
+            </div>
+        </main>
+
+        <div class="carousel-movies">
+            <div id="minis" class="owl-carousel owl-theme">               
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/2328b8d009.js" crossorigin="anonymous"></script>
+        <script src="./js/owl/jquery.min.js"></script>
+        <script src="./js/owl/owl.carousel.min.js"></script>
+        <script src="./js/global.js"></script>
+    </body>
+</html>

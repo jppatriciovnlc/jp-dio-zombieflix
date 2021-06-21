@@ -1,0 +1,343 @@
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family:'Arial', Times, serif;
+    color: #fff;
+}
+
+header .container {
+   display: flex;
+   flex-direction: row;  
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 10px;
+   padding-bottom: 10px ;
+}
+
+header .container .links {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color:#1D5523;
+    font-family: 'Arial Black';
+    font-size: 3vh;
+    text-transform: uppercase;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+header .container .links nav {
+    margin-left: 40px;    
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.5vh;
+    color: #ffff;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color:#aaa;
+}
+
+header nav .active {
+    color:#3d9146;
+    font-weight: bold;
+}
+
+.icons .fa-user {
+    color:#1D5523;
+}
+
+.container {
+    margin-left: 35px;
+}
+
+/******  main movie *******/
+
+.main-movie {
+    font-size: 16px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.main-movie .description {
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+
+.main-movie .title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.main-movie button {
+    height: 40px;    
+    font-size: 15px;    
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.main-movie .buttons .btn-watch {
+    width: 130px;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+
+
+.main-movie .buttons .btn-info {
+    width: 220px;
+    background-color: #4f4f4f;
+    color: #fff;
+}
+
+
+
+.main-movie .buttons button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .3s ease all;
+    
+}
+
+.main-movie .buttons .btn-watch:hover {
+    background-color: #999898;
+    color: #000;
+    transition: .3s ease all;
+}
+
+.main-movie .buttons button i {
+margin-right: 8px;
+}
+
+/******  carousel *******/
+
+.carousel-movies {
+    margin-top: 5px;
+    height: 30vh;
+    padding-left: 10px;
+}
+
+.carousel-movies .owl-theme {
+    height: 100%;    
+}
+
+.carousel-movies .item {
+    display: flex;
+    height:30vh;
+    padding: 5px;
+    cursor: pointer;
+ /**
+    height: 40vh;
+    width: 28vh;
+ **/  
+}
+
+.carousel-movies .item .box-movie {
+    height: 100%;
+    width: auto;
+  /**  height: 100%;
+    width: auto;
+    display: block;   
+    **/
+}
+
+
+/******  survivors *******/
+
+.main-survivors{
+    font-size: 5vh;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.main-survivors h3 {
+    margin-top: 10vh;
+    padding-left: 10%;
+}
+
+.main-survivors h4 {
+    margin-top: 10vh;
+    padding-left: 50%;
+}
+
+/******  series *******/
+.main-series{
+    padding-top: 5vh;
+    font-size: 5vh;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-series .container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.main-series p {
+    width: 30%;
+    font-size: 3vh;
+    margin-bottom: 50px;
+}
+
+
+/******  brains *******/
+.main-brains{
+    padding-top: 5vh;
+    font-size: 5vh;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,.10), rgba(0,0,0,.10)100%), url("../img/mushroom-3051519_1920.jpg");
+    background-size: cover;
+}
+
+.main-brains .container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.main-brains p {
+    max-width: 70%;
+    font-size: 3vh;
+    margin-bottom: 50px;
+}
+
+
+/**MEDIA**/
+@media screen and (max-width:800px) {
+    header .container{
+        display: flex;
+        flex-direction: row;
+    }    
+
+    .links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .links h2 {
+        font-size: 1.5vh;
+        width: 200px;
+    }
+
+    .links nav {   
+       margin-left: 5px;
+    }
+
+    .links nav a {  
+        font-size: 0.8vh;
+    }
+
+    .main-movie .buttons button { 
+        margin-top: 5px;
+        width: 190px;
+        height: 60px;
+    }
+
+    .main-brains{
+        background: linear-gradient(rgba(0,0,0,.10), rgba(0,0,0,.10)100%), url("../img/mushroom-3051519_1920.jpg");
+        background-size: cover;
+        background-position: 50%        
+    }
+
+    .main-series p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {   
+    header .container {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .links {
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .links h2 {
+        margin-bottom: 10px;
+        width: 150px;
+        font-size: 2vh;        
+        margin-left: 5px;   
+    }  
+
+    .links nav {   
+       margin-left: 0px;
+       display: none;
+    }
+
+    .links nav a {  
+        font-size: 0.8vh;
+    }
+
+    .main-movie {
+        height: 70vh;
+        background-size: cover;
+    }
+
+    .main-brains{
+        background: linear-gradient(rgba(0,0,0,.10), rgba(0,0,0,.10)100%), url("../img/mushroom-3051519_1920.jpg");
+        background-size: cover;
+        background-position: 50%        
+    }
+
+    .main-brains p {
+       padding-top: 2vh;;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .main-movie .description {
+        width: 50%;    
+    }
+};
+
+
+
